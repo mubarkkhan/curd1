@@ -1,38 +1,50 @@
-.App {
+.todo h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo button{
+  float: right;
+    margin-right: 2rem;
+    background-color: white;
+    padding: 5px 7px;
+    border: 1px solid #83e8e8;
+    color: #3a8989;
+    font-size: 13px;
+    border-radius: 3px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo .line{
+  width: 97%;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+    margin-top: 0rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo .nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    justify-content: space-between;
+    width: 93%;
+    margin: auto;
 }
-
-.App-link {
-  color: #61dafb;
+.todo .data .task{
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo .data .task button.edit{
+  border: 1px solid;
+  padding: 0px 5px;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.todo .data .task button.delete{
+  border: 1px solid red;
+  padding: 0px 5px;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.add{
+  text-align: center;
+}
+.edit{
+  text-align: center;
 }

@@ -30,21 +30,32 @@
   width: 93%;
   margin: auto;
 }
+.todo .data .task .detail{
+  display: flex;
+  justify-content: space-between;
+  width: 57%;
+}
 .todo .data .task button.edit{
   border: 1px solid;
   padding: 0px 5px;
     font-size: 1.5rem;
-    margin: 0;
+    margin-right: 3rem;
+    margin-top: 7px;
 }
 .todo .data .task button.delete{
   border: 1px solid red;
   padding: 0px 5px;
     font-size: 1.5rem;
-    margin: 0;
+    margin: 7px 15px 0px 25px;
 }
 .add{
   text-align: center;
 }
 .edit{
   text-align: center;
+}
+@media screen and (max-width: 400px){
+  .todo .data .task .detail{
+    display: block;
+  }
 }

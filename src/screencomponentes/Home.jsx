@@ -35,7 +35,7 @@ function Home() {
             toast.error(update.message)
         }
     }
-    
+
     const Click = () => {
         add('/add')
     }
@@ -48,7 +48,7 @@ function Home() {
                 <div className="nav">
                     <h5>#</h5>
                     <h5>Task Name</h5>
-                    <h5>Status</h5>
+                    <h5 className="status">Status</h5>
                     <h5>Edit</h5>
                     <h5>Remove</h5>
                 </div>
@@ -59,11 +59,14 @@ function Home() {
                             return (
                                 <>
                                     <div key={datas._id} className="task">
-                                        <h4>{index + 1}</h4>
-                                        <h2>{datas.name}</h2>
-                                        <h3>{datas.status}</h3>
-                                        <Link to={`/edit?id=/${datas._id}`}><button className="edit"><MdEdit /></button></Link>
-                                        <button onClick={()=>{deldata(datas._id)}} className="delete"><MdDelete /></button>
+                                        <div className="detail">
+                                            <h4>{index + 1}</h4>
+                                            <h2>{datas.name}</h2>
+                                            <h3 style={{fontSize:"1.2rem",width:"13%"}}>{datas.status}</h3>
+                                        </div>
+                                            <Link to={`/edit?id=/${datas._id}`}><button className="edit"><MdEdit /></button></Link>
+                                            <button onClick={() => { deldata(datas._id) }} className="delete"><MdDelete /></button>
+
                                     </div>
                                 </>
                             )

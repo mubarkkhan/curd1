@@ -47,9 +47,9 @@ function Home() {
                 <button onClick={Click}>Add Task</button>
                 <div className="nav">
                     <h5>#</h5>
-                    <h5>Task Name</h5>
-                    <h5>Status</h5>
-                    <h5>Edit</h5>
+                    <h5 className="ta">Task Name</h5>
+                    <h5 className="st">Status</h5>
+                    <h5 className="ed">Edit</h5>
                     <h5>Remove</h5>
                 </div>
                 <div className="line"></div>
@@ -60,8 +60,12 @@ function Home() {
                                 <>
                                     <div key={datas._id} className="task">
                                         <h4>{index + 1}</h4>
+                                        <div className="name">
                                         <h2>{datas.name}</h2>
+                                        </div>
+                                        <div className="status">
                                         <h3>{datas.status}</h3>
+                                        </div>
                                         <Link to={`/edit?id=/${datas._id}`}><button className="edit"><MdEdit /></button></Link>
                                         <button onClick={()=>{deldata(datas._id)}} className="delete"><MdDelete /></button>
                                     </div>

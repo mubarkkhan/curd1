@@ -110,4 +110,8 @@ server.listen(port, (req, res) => {
     catch (e) {
         console.log(e, 'error')
     }
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8

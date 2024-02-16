@@ -30,17 +30,34 @@
   width: 93%;
   margin: auto;
 }
+<<<<<<< HEAD
+=======
+.todo .data .task .detail{
+  display: flex;
+  justify-content: space-between;
+  width: 57%;
+}
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8
 .todo .data .task button.edit{
   border: 1px solid;
   padding: 0px 5px;
     font-size: 1.5rem;
+<<<<<<< HEAD
     margin: 0.2rem 0;
+=======
+    margin-right: 3rem;
+    margin-top: 7px;
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8
 }
 .todo .data .task button.delete{
   border: 1px solid red;
   padding: 0px 5px;
     font-size: 1.5rem;
+<<<<<<< HEAD
     margin: 0.2rem 0;
+=======
+    margin: 7px 15px 0px 25px;
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8
 }
 .add{
   text-align: center;
@@ -48,6 +65,7 @@
 .edit{
   text-align: center;
 }
+<<<<<<< HEAD
 .todo .data .task .name{
   width: 20%;
   text-align: center;
@@ -67,4 +85,10 @@
 .todo .nav h5.ed{
   position: absolute;
   left: 80.7%;
+=======
+@media screen and (max-width: 400px){
+  .todo .data .task .detail{
+    display: block;
+  }
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8
 }

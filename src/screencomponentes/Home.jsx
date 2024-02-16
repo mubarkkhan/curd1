@@ -35,7 +35,11 @@ function Home() {
             toast.error(update.message)
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8
     const Click = () => {
         add('/add')
     }
@@ -47,9 +51,15 @@ function Home() {
                 <button onClick={Click}>Add Task</button>
                 <div className="nav">
                     <h5>#</h5>
+<<<<<<< HEAD
                     <h5 className="ta">Task Name</h5>
                     <h5 className="st">Status</h5>
                     <h5 className="ed">Edit</h5>
+=======
+                    <h5>Task Name</h5>
+                    <h5 className="status">Status</h5>
+                    <h5>Edit</h5>
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8
                     <h5>Remove</h5>
                 </div>
                 <div className="line"></div>
@@ -59,6 +69,7 @@ function Home() {
                             return (
                                 <>
                                     <div key={datas._id} className="task">
+<<<<<<< HEAD
                                         <h4>{index + 1}</h4>
                                         <div className="name">
                                         <h2>{datas.name}</h2>
@@ -68,6 +79,16 @@ function Home() {
                                         </div>
                                         <Link to={`/edit?id=/${datas._id}`}><button className="edit"><MdEdit /></button></Link>
                                         <button onClick={()=>{deldata(datas._id)}} className="delete"><MdDelete /></button>
+=======
+                                        <div className="detail">
+                                            <h4>{index + 1}</h4>
+                                            <h2>{datas.name}</h2>
+                                            <h3 style={{fontSize:"1.2rem",width:"13%"}}>{datas.status}</h3>
+                                        </div>
+                                            <Link to={`/edit?id=/${datas._id}`}><button className="edit"><MdEdit /></button></Link>
+                                            <button onClick={() => { deldata(datas._id) }} className="delete"><MdDelete /></button>
+
+>>>>>>> 6923bb24962ed351cdacf805b7c40ef928def5b8
                                     </div>
                                 </>
                             )

@@ -4,14 +4,13 @@ import { ToastContainer, toast } from "react-toastify";
 function Adding(){
     const [name, setname] = useState('')
     const [status, setstatus] = useState('')
-    const [api,setapi] = useState('http://localhost:8000/tdata')
     const postdata = async (e) => {
         e.preventDefault()
         if(!name || !status){
             alert('plz fill the input')
         }
         else{
-            const res = await fetch( api, {
+            const res = await fetch( 'http://localhost:8000/tdata', {
                 method: 'POST',
                 body: JSON.stringify({ "name": name, "status": status }),
                 headers: {

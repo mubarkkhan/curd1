@@ -19,8 +19,8 @@ function Edit(){
         setuser(update)
     }
     useEffect(()=>{
-        getedit()
-    }, [])
+        getedit();
+    }, [user]);
 
     const updatedata = async(e)=>{
         const res = await fetch(`http://localhost:8000/edit/${e}`,{
